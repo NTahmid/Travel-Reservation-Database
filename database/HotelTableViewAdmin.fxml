@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="656.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="projectver2.HotelTableViewAdminController">
+   <children>
+      <Button fx:id="backButton" layoutX="38.0" layoutY="40.0" mnemonicParsing="false" onAction="#getBack" text="Back" />
+      <TableView fx:id="table" layoutX="51.0" layoutY="124.0" prefHeight="230.0" prefWidth="547.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="95.0" text="Hotel Name" />
+          <TableColumn fx:id="c2" prefWidth="95.0" text="Address" />
+            <TableColumn fx:id="c3" prefWidth="87.0" text="Contact" />
+            <TableColumn fx:id="c4" prefWidth="75.0" text="Rating" />
+            <TableColumn fx:id="c5" prefWidth="95.0" text="City" />
+            <TableColumn fx:id="c6" prefWidth="99.0" text="Country" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cityBox" layoutX="442.0" layoutY="40.0" onAction="#comboEvent1" prefWidth="150.0" promptText="Select City" />
+      <ComboBox fx:id="countryBox" layoutX="178.0" layoutY="40.0" onAction="#comboEvent" prefWidth="150.0" promptText="Select Country" />
+      <TextField fx:id="nameField" layoutX="79.0" layoutY="390.0" />
+      <TextField fx:id="contactField" layoutX="79.0" layoutY="442.0" />
+      <TextField fx:id="addressField" layoutX="79.0" layoutY="492.0" />
+      <Button fx:id="changeNameButton" layoutX="255.0" layoutY="390.0" mnemonicParsing="false" onAction="#changeHotelName" text="Change Name" />
+      <Button fx:id="changeContactButton" layoutX="255.0" layoutY="442.0" mnemonicParsing="false" onAction="#changeHotelContact" text="Change Contact No" />
+      <Button fx:id="changeAddressButton" layoutX="255.0" layoutY="492.0" mnemonicParsing="false" onAction="#changeHotelAddress" text="Change Address" />
+      <Button fx:id="deleteButton" layoutX="534.0" layoutY="390.0" mnemonicParsing="false" onAction="#deleteHotel" text="Delete" />
+      <Button fx:id="viewRoomsButton" layoutX="503.0" layoutY="442.0" mnemonicParsing="false" onAction="#viewRooms" text="View Hotel Rooms" />
+      <TextField fx:id="ratingField" layoutX="79.0" layoutY="540.0" />
+      <Button fx:id="changeRatingButton" layoutX="255.0" layoutY="540.0" mnemonicParsing="false" onAction="#changeHotelRating" text="Change Rating" />
+   </children>
+</AnchorPane>
